@@ -9,7 +9,6 @@
 * followed by a new line, to the standard error.
 * Return: 1 if success.
 */
-
 int main(void)
 
 {
