@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  *
@@ -6,7 +6,7 @@
  *
  *   *
  *
- *    * Return: Always 0 (Success)
+ *    * Return: Alwaya 0 (Success)
  *
  *     */
 
@@ -14,24 +14,28 @@ int main(void)
 
 {
 
-		char *sh = "Holberton";
+		char h[] = "_putchar";
+
+			int m;
 
 
 
-			while (*sh)
-
-					{
-
-								_putchar(*sh);
-
-										sh++;
-
-											}
-
-				_putchar('\n');
+				m = 0;
 
 
 
-					return (0);
+					while (m <= 7)
+
+							{
+
+										_putchar(h[m]);
+
+												m++;
+
+													}
+
+						_putchar('\n');
+
+							return (0);
 
 }
