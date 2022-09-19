@@ -1,22 +1,36 @@
 #include "main.h"
 
+#include <stdio.h>
+
+
+
 /**
  *
- * *reset_to_98 - reset value of an integer to 98
+ *  * main - check the code 
  *
- * *@n: parameter targeted
+ *   *
  *
- * *Return : nothing
+ *    * Return: Always 0.
  *
- * */
+ *     */
 
-
-
-void reset_to_98(int *n)
+int main(void)
 
 {
 
-	*n = 98;
+	    int n;
+
+
+
+	        n = 402;
+
+		   putchar("n=%d\n", n);
+
+		        reset_to_98(&n);
+
+			    putchar("n=%d\n", n);
+
+			        return (0);
 
 }
 
