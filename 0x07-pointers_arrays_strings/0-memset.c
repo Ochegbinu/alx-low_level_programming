@@ -7,18 +7,12 @@
 
 
 /**
- *
- *  * _memset - fills memory with a constant byte
- *
- *   * @s: source string
- *
- *    * @b: the contant bit for filling
- *
- *     * @n: length of buffer
- *
- *      * Return: new string
- *
- *       */
+ * _memset - fills memory with a constant byte
+ * @s: source string
+ * @b: the contant bit for filling
+ * @n: length of buffer
+ * Return: new string
+ */
 
 
 
