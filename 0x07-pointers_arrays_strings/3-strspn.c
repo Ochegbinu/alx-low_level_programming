@@ -3,20 +3,12 @@
 
 
 /**
+ * _strspn - Locates a character in a string
+ * @s: This is the main C string to be scanned.
+ * @accept: This is the string containing the list of characters to match in s
  *
- *  *_strspn - gets the length of a prefix substring
- *
- *   *
- *
- *    *@s: pointer that contains the string to be evaluated
- *
- *     *@accept: pointer that contains the substring that will condition s
- *
- *      *
- *
- *       *Return: length of s which contains characters in accept
- *
- *        */
+ * Return: return count
+ **/
 
 unsigned int _strspn(char *s, char *accept)
 
