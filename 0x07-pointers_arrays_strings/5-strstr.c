@@ -3,93 +3,68 @@
 
 
 /**
- *
- *  *_strstr - locates a substring within a string
- *
- *   *
- *
- *    *@haystack: pointer that contains the address of the string to be evaluated
- *
- *     *@needle: pointer that contains the string to evaluate @haystack
- *
- *      *
- *
- *       *Return: address of the located string in @haystack if no substring is found
- *
- *        *then retun NULL
- *
- *         */
+ * _strstr - Locates a substring.
+ * @haystack: The string to be searched.
+ * @needle: The substring to be located.
+ * Return: If the substring is located - a pointer to the beginning
+ *         of the located substring.
+ *         If the substring is not located - NULL.
+ */
+
+
 
 char *_strstr(char *haystack, char *needle)
 
 {
 
-		int i = 0;
-
-			int j = 0;
-
-				int a;
-
-					int compare = 0;
+		int index;
 
 
 
-						if (*needle == 0)
+			if (*needle == 0)
 
-								{
+						return (haystack);
 
-											return (haystack);
 
-												}
 
-							while (haystack[i] != 0)
+				while (*haystack)
 
-									{
+						{
 
-												j = 0;
+									index = 0;
 
-														a = i;
 
-																while (needle[j] != 0)
 
-																			{
+											if (haystack[index] == needle[index])
 
-																							if (needle[j] == haystack[a])
+														{
 
-																											{
+																		do {
 
-																																compare = 1;
 
-																																			}
 
-																										else
+																							if (needle[index + 1] == '\0')
 
-																														{
+																													return (haystack);
 
-																																			compare = 0;
 
-																																							break;
 
-																																										}
+																											index++;
 
-																													j++;
 
-																																a++;
 
-																																		}
+																														} while (haystack[index] == needle[index]);
 
-																		if (compare == 1)
+																				}
 
-																					{
 
-																									return (haystack + i);
 
-																											}
+													haystack++;
 
-																				i++;
+														}
 
-																					}
 
-								return (0);
+
+					return ('\0');
 
 }
