@@ -3,79 +3,33 @@
 
 
 /**
- * _strspn - Locates a character in a string
- * @s: This is the main C string to be scanned.
- * @accept: This is the string containing the list of characters to match in s
- * Return: return count
- **/
+ * _strchr - Locates a character in a string.
+ * @s: The string to be searched.
+ * @c: The character to be located.
+ * Return: If c is found - a pointer to the first occurence.
+ *         If c is not found - NULL.
+ */
 
-
-
-unsigned int _strspn(char *s, char *accept)
-
-
+char *_strchr(char *s, char c)
 
 {
 
-		int i, j;
-
-			int count = 0;
-
-				char *str1, *str2;
+		int index;
 
 
 
-					str1 = s;
+			for (index = 0; s[index] >= '\0'; index++)
 
-						str2 = accept;
+					{
 
+								if (s[index] == c)
 
+												return (s + index);
 
-							i = 0;
-
-								while (str1[i] != '\0') /*Declaring WHILE *s */
-
-										{
-
-													j = 0;
-
-															while (str2[j] != '\0') /*Declaring WHILE *accept*/
-
-																		{
-
-																						if (str2[j] == str1[i]) /*Evaluate condition*/
-
-																										{
-
-																															count++; /*count number*/
-
-																																			break;
-
-																																						}
+									}
 
 
 
-																									j++;    /*add j+1*/
-
-																											}
-
-																	if (s[i] != accept[j]) /*If aren't equals*/
-
-																				{
-
-																								break;
-
-																										}
-
-
-
-																			i++; /*add x+1*/
-
-																				}
-
-
-
-									return (count); /*return the value of count*/
+				return ('\0');
 
 }
-
