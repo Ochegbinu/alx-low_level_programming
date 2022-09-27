@@ -3,11 +3,11 @@
 
 
 /**
- * _strspn - Locates a character in a string
- * @s: This is the main C string to be scanned.
- * @accept: This is the string containing the list of characters to match in s
- *
- * Return: return count
+ * _strspn - search a string for a set of bytes
+ * @s: source string
+ * @accept: accepted string
+ * 
+ * Return: number of bytes in the init segment
  **/
 
 unsigned int _strspn(char *s, char *accept)
