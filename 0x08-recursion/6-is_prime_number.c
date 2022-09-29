@@ -15,26 +15,11 @@ int tmp_prime(int n, int i);
 
 
 /**
- *
- *  *
- *
- *   *  * divisors - number is prime?
- *
- *    *
- *
- *     *   * @n: integer params
- *
- *      *
- *
- *       *    * @m: integer params
- *
- *        *
- *
- *         *     * Return: boolean
- *
- *          *
- *
- *           *      */
+ * divisors - number is prime?
+ * @n: integer params
+ * @m: integer params
+ * Return: boolean
+ */
 
 
 
