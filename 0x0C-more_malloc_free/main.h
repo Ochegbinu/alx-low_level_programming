@@ -1,7 +1,10 @@
+#ifndef MAIN_H
 
-int _putchar(char c);
+#define MAIN_H
 
-char *create_array(unsigned int size, char c);
+void -puts (char *str);
+
+void *malloc_checked(unsigned int b);
 
 char *_strdup(char *str);
 
@@ -15,4 +18,4 @@ char *argstostr(int ac, char **av);
 
 char **strtow(char *str);
 
-
+#endif
