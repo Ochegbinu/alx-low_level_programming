@@ -2,59 +2,42 @@
 
 #include <stdlib.h>
 
-/**
- * create_array - Main Entry
- * @size: input
- * @c: input
- * Return: 0
- */
 
-char *create_array(unsigned int size, char c)
+
+/**
+ *
+ * * *malloc_checked - allocates memory using malloc
+ *
+ * *
+ *
+ * * @b: number of bytes to allocate
+ *
+ * *
+ *
+ * * Return: a pointer to the allocated memory
+ *
+ * */
+
+
+
+void *malloc_checked(unsigned int b)
 
 {
 
-			char *arr;
-
-					unsigned int i;
+	void *ptr;
 
 
 
-							if (size == 0)
-
-										{
-
-														return (NULL);
-
-																}
+	ptr = malloc(b);
 
 
 
-									arr = malloc(sizeof(char) * size);
+	if (ptr == NULL)
+
+		exit(98);
 
 
 
-											if (arr == NULL)
-
-														{
-
-
-
-																		return (NULL);
-
-																				}
-
-
-
-													for (i = 0; i < size; i++)
-
-																{
-
-																				arr[i] = c;
-
-																						}
-
-
-
-															return (arr);
+	return (ptr);
 
 }
