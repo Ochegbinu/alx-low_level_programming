@@ -1,10 +1,7 @@
 /*
- *
- *  * File: 101-mul.c
- *
- *   * Auth: Brennan D Baraban
- *
- *    */
+ * File: 101-mul.c
+ * Auth: Brennan D Baraban
+ */
 
 
 
@@ -29,16 +26,10 @@ void add_nums(char *final_prod, char *next_prod, int next_len);
 
 
 /**
- *
- *  * find_len - Finds the length of a string.
- *
- *   * @str: The string to be measured.
- *
- *    *
- *
- *     * Return: The length of the string.
- *
- *      */
+ * find_len - Finds the length of a string.
+ * @str: The string to be measured.
+ * Return: The length of the string.
+ */
 
 int find_len(char *str)
 
@@ -61,22 +52,13 @@ int find_len(char *str)
 
 
 /**
- *
- *  * create_xarray - Creates an array of chars and initializes it with
- *
- *   *                 the character 'x'. Adds a terminating null byte.
- *
- *    * @size: The size of the array to be initialized.
- *
- *     *
- *
- *      * Description: If there is insufficient space, the
- *
- *       *              function exits with a status of 98.
- *
- *        * Return: A pointer to the array.
- *
- *         */
+ * create_xarray - Creates an array of chars and initializes it with
+ *                 the character 'x'. Adds a terminating null byte.
+ * @size: The size of the array to be initialized.
+ * Description: If there is insufficient space, the
+ *              function exits with a status of 98.
+ * Return: A pointer to the array.
+ */
 
 char *create_xarray(int size)
 
@@ -115,18 +97,11 @@ char *create_xarray(int size)
 
 
 /**
- *
- *  * iterate_zeroes - Iterates through a string of numbers containing
- *
- *   *                  leading zeroes until it hits a non-zero number.
- *
- *    * @str: The string of numbers to be iterate through.
- *
- *     *
- *
- *      * Return: A pointer to the next non-zero element.
- *
- *       */
+ * iterate_zeroes - Iterates through a string of numbers containing
+ *                  leading zeroes until it hits a non-zero number.
+ * @str: The string of numbers to be iterate through.
+ * Return: A pointer to the next non-zero element.
+ */
 
 char *iterate_zeroes(char *str)
 
@@ -145,20 +120,12 @@ char *iterate_zeroes(char *str)
 
 
 /**
- *
- *  * get_digit - Converts a digit character to a corresponding int.
- *
- *   * @c: The character to be converted.
- *
- *    *
- *
- *     * Description: If c is a non-digit, the function
- *
- *      *              exits with a status of 98.
- *
- *       * Return: The converted int.
- *
- *        */
+ * get_digit - Converts a digit character to a corresponding int.
+ * @c: The character to be converted.
+ * Description: If c is a non-digit, the function
+ *              exits with a status of 98.
+ * Return: The converted int.
+ */
 
 int get_digit(char c)
 
@@ -187,24 +154,14 @@ int get_digit(char c)
 
 
 /**
- *
- *  * get_prod - Multiplies a string of numbers by a single digit.
- *
- *   * @prod: The buffer to store the result.
- *
- *    * @mult: The string of numbers.
- *
- *     * @digit: The single digit.
- *
- *      * @zeroes: The necessary number of leading zeroes.
- *
- *       *
- *
- *        * Description: If mult contains a non-digit, the function
- *
- *         *              exits with a status value of 98.
- *
- *          */
+ * get_prod - Multiplies a string of numbers by a single digit.
+ * @prod: The buffer to store the result.
+ * @mult: The string of numbers.
+ * @digit: The single digit.
+ * @zeroes: The necessary number of leading zeroes.
+ * Description: If mult contains a non-digit, the function
+ *              exits with a status value of 98.
+ */
 
 void get_prod(char *prod, char *mult, int digit, int zeroes)
 
@@ -285,16 +242,11 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 
 /**
- *
- *  * add_nums - Adds the numbers stored in two strings.
- *
- *   * @final_prod: The buffer storing the running final product.
- *
- *    * @next_prod: The next product to be added.
- *
- *     * @next_len: The length of next_prod.
- *
- *      */
+ * add_nums - Adds the numbers stored in two strings.
+ * @final_prod: The buffer storing the running final product.
+ * @next_prod: The next product to be added.
+ * @next_len: The length of next_prod.
+ */
 
 void add_nums(char *final_prod, char *next_prod, int next_len)
 
